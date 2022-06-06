@@ -6,7 +6,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { Frature } from "./feature.entity";
+import { Feature } from "./feature.entity";
 import { Article } from "./article.entity";
 
 @Index("uq_article_feature_article_id_feature_id", ["articleId", "featureId"], {
@@ -31,12 +31,12 @@ export class ArticleFeature {
   @Column("varchar", { name: "value", length: 255})
   value: string;
 
-  @ManyToOne(() => Frature, (frature) => frature.articleFeatures, {
+  @ManyToOne(() => Feature, (frature) => frature.articleFeatures, {
     onDelete: "RESTRICT",
     onUpdate: "CASCADE",
   })
-  @JoinColumn([{ name: "feature_id", referencedColumnName: "fratureId" }])
-  feature: Frature;
+  @JoinColumn([{ name: "feature_id", referencedColumnName: "featureId" }])
+  feature: Feature;
 
   @ManyToOne(() => Article, (article) => article.articleFeatures, {
     onDelete: "RESTRICT",
