@@ -1,6 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { Administrator } from 'entities/administrator.entity';
-import { AdministratorService } from '../services/administrator/administrator.service';
+import { AdministratorService } from '../services/administrator/administrator/administrator.service';
 
 @Controller()
 export class AppController {
