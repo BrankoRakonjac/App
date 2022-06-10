@@ -21,6 +21,7 @@ import { AuthMiddleware } from './middlewares/auth.middleware';
 import { AdministratorService } from './services/administrator/administrator/administrator.service';
 import { ArticleService } from './services/administrator/article/article.service';
 import { CategoryService } from './services/administrator/category/category.service';
+import { PhotoService } from './services/photo/photo.service';
 
 DatabaseConfiguration
 
@@ -50,10 +51,16 @@ DatabaseConfiguration
     }),
     TypeOrmModule.forFeature([
       Administrator,
-      Category,
-      Article,
-      ArticlePrice,
-      ArticleFeature,
+        ArticleFeature,
+        ArticlePrice,
+        Article,
+        CartArticle,
+        Cart,
+        Category,
+        Feature,
+        Order,
+        Photo,
+        User
       
      ])
   ],
@@ -62,13 +69,15 @@ DatabaseConfiguration
     AdministratorController, 
     CategoryControler,
     ArticleControler,
-    AuthController
+    AuthController,
+    
 
   ],
   providers: [
     AdministratorService,
     CategoryService,
-    ArticleService
+    ArticleService,
+    PhotoService
   ],
   exports:[
     AdministratorService,
