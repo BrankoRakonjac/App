@@ -4,7 +4,7 @@ import { TypeOrmCrudService } from "@nestjsx/crud-typeorm";
 import { ArticleFeature } from "entities/article-feature.entity";
 import { ArticlePrice } from "entities/article-price.entity";
 import { Article } from "entities/article.entity";
-import { AddArticleDto } from "src/dtos/administrator/article/add.article.dto";
+import { AddArticleDto } from "src/dtos/article/add.article.dto";
 import { ApiResponse } from "src/misc/api.response.class";
 import { Repository } from "typeorm";
 

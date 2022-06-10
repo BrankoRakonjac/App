@@ -1,7 +1,7 @@
 import { Body, Controller, Post } from "@nestjs/common";
 import { Crud } from "@nestjsx/crud";
 import { Article } from "entities/article.entity";
-import { AddArticleDto } from "src/dtos/administrator/article/add.article.dto";
+import { AddArticleDto } from "src/dtos/article/add.article.dto";
 import { ArticleService } from "src/services/administrator/article/article.service";
 
 @Controller('api/article')
