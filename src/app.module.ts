@@ -13,7 +13,7 @@ import { Order } from 'entities/order.entity';
 import { Photo } from 'entities/photo.entity';
 import { User } from 'entities/user.entity';
 import { AdministratorController } from './controllers/api/administrator.controller';
-import { ArticleControler } from './controllers/api/article.cantroller';
+import { ArticleControler } from './controllers/api/article.controller';
 import { AuthController } from './controllers/api/auth.controller';
 import { CategoryControler } from './controllers/api/category.controller';
 import { AppController } from './controllers/app.controller';
