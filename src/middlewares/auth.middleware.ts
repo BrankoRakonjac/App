@@ -1,6 +1,6 @@
 import { HttpException, HttpStatus, Injectable, NestMiddleware } from "@nestjs/common";
 import { NextFunction , Request,Response } from "express";
-import { AdministratorService } from "src/services/administrator/administrator/administrator.service";
+import { AdministratorService } from "src/services/administrator/administrator.service";
 import * as jwt from 'jsonwebtoken'
 import { JwtDataAdministratorDto } from "src/dtos/administrator/jwt.data.administrator.dto";
 import { jwtSecret } from "config/jwt.secret";

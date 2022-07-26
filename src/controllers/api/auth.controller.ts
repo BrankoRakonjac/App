@@ -2,7 +2,7 @@ import { Body, Controller, Post, Req } from "@nestjs/common";
 import { resolve } from "path";
 import { LoginAdministratorDto } from "src/dtos/administrator/login.administrator.dto";
 import { ApiResponse } from "src/misc/api.response.class";
-import { AdministratorService } from "src/services/administrator/administrator/administrator.service";
+import { AdministratorService } from "src/services/administrator/administrator.service";
 import * as crypto from 'crypto';
 import * as jwt from 'jsonwebtoken';
 import { JwtDataAdministratorDto } from "src/dtos/administrator/jwt.data.administrator.dto";

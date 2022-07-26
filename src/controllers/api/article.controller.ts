@@ -4,7 +4,7 @@ import { Crud } from "@nestjsx/crud";
 import { StorageConfig } from "config/storage.config";
 import { Article } from "src/entities/article.entity";
 import { AddArticleDto } from "src/dtos/article/add.article.dto";
-import { ArticleService } from "src/services/administrator/article/article.service";
+import { ArticleService } from "src/services/article/article.service";
 import { diskStorage } from "multer";
 import { PhotoService } from "src/services/photo/photo.service";
 import { Photo } from "src/entities/photo.entity";
@@ -21,7 +21,7 @@ import * as sharp from 'sharp';
     },
     params:{
         id:{
-            field: 'articleId',
+            field: 'article_id',
             type: 'number',
             primary: true
         }
