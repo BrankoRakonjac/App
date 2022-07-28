@@ -27,8 +27,8 @@ export class User {
   })
   passwordHash: string;
 
-  @Column("varchar", { name: "forname", length: 64})
-  forname: string;
+  @Column("varchar", { name: "forename", length: 64})
+  forename: string;
 
   @Column("varchar", { name: "surname", length: 64})
   surname: string;
